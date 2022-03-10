@@ -34,7 +34,7 @@ export class PopupComponent
   @Input() maxWidth?: PopupOptions['maxWidth'];
 
   /* Dynamic input */
-  @Input() feature?: GeoJSON.Feature<GeoJSON.Point>;
+  @Input() feature?: mapboxgl.MapboxGeoJSONFeature;
   @Input() lngLat?: LngLatLike;
   @Input() marker?: MarkerComponent;
   @Input() offset?: number | PointLike | { [anchor: string]: [number, number] };
